@@ -500,7 +500,6 @@ body{
 }
 .about-img img{
     width: 100%;
-    height:380px;
     padding: 30px;
     border-radius: 40px;
 }
@@ -695,7 +694,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:95%;
+    width:100%;
     border-radius: 10px;
     background: #c70039;
 }
@@ -709,11 +708,25 @@ body{
     font-family: poppins;
     justify-content: center;
     transition: all .4s ease;
-    width:90%;
+    width:95%;
     border-radius: 10px;
     background: #c70039;
 }
-.adobe-progress{
+.ReactJS-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    justify-content: center;
+    transition: all .4s ease;
+    width:85%;
+    border-radius: 10px;
+    background: #c70039;
+}
+.Laravel-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -722,7 +735,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:83%;
+    width:100%;
     border-radius: 10px;
     background: #c70039;
 }
@@ -734,7 +747,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:85%;
+    width:95%;
     border-radius: 10px;
     background: #c70039;
     transition: all .4s ease;
@@ -760,9 +773,35 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:84%;
+    width:80%;
     border-radius: 10px;
     transition: all .4s ease;
+    background: #c70039;
+}
+.Wordpress-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:95%;
+    border-radius: 10px;
+    transition: all .4s ease;
+    background: #c70039;
+}
+.Unity-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:50%;
+    border-radius: 10px;
     background: #c70039;
 }
 .portfolio-header{
@@ -876,15 +915,19 @@ padding-bottom: 40px;
 .button{
     text-align: center;
 }
-    .portfolio-image img{
-        height: 400px;
-        width: 100%;
-        position: relative;
-    }
-    .portfolio-image{
-        height: 400px;
-        width: 40%;
-    }
+
+
+.portfolio-image {
+    width: 100%;
+}
+
+.portfolio-image img{
+    /* height: 400px; */
+    /* width: 100%; */
+    width: 40%;
+    position: relative;
+}
+
 .portfolio-image img::before{
     content: "";
     height: 100%;
@@ -1221,6 +1264,22 @@ form button:hover{
     height:40px;
     opacity: .8;
 }
+.qr {
+    width: 40%;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 1025px) and (min-width: 551px) {
+    .qr {
+        width: 70%;
+        border-radius: 16px;
+        margin-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+}
 
 .footer{
     background: #080808;
@@ -1403,7 +1462,6 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
         width: 200%;
         background-color: #c70039;
         opacity: 1;
@@ -1544,6 +1602,7 @@ For devices with smaller width like mobile phone
     }
     .portfolio-text{
         width: 90%;
+        max-width: 500px;
         padding-left: 0%;
         margin: 0%;
         margin-left: 0px;
@@ -1576,11 +1635,11 @@ For devices with smaller width like mobile phone
                 box-shadow:0px 0px 0px 0px #c70039 ;
             }
             .portfolio-image img{
-                height: 300px;
+                /* height: 300px; */
                 width: 100%;
             }
             .portfolio-image{
-                height: 300px;
+                /* height: 300px; */
                 width: 90%;
             }
             #navigation-bar img{
@@ -1858,7 +1917,6 @@ for tabs and large phones
         display: none;
     }
     #breaker{
-        height: 50vh;
         width: 200%;
         background-color: #c70039;
         opacity: 1;
@@ -2047,12 +2105,12 @@ for tabs and large phones
                 box-shadow:0px 0px 0px 0px #c70039 ;
             }
             .portfolio-image img{
-                height: 380px;
+                /* height: 380px; */
                 width: 100%;
                 position: relative;
             }
             .portfolio-image{
-                height: 380px;
+                /* height: 380px; */
                 width: 70%;
             }
             #navigation-bar img{
@@ -2279,12 +2337,12 @@ for tabs and large phones
 @media all and (max-width: 9000px) and (min-width: 1441px){
 
     .portfolio-image img{
-        height: 500px;
+        /* height: 500px; */
         width: 100%;
         position: relative;
     }
     .portfolio-image{
-        height: 500px;
+        /* height: 500px; */
         width: 40%;
     }
     .about-img img{
@@ -2565,4 +2623,22 @@ for tabs and large phones
         border-radius: 8px;
         transition: all .4s ease;
     }
+}
+
+.nanogallery_gallerytheme_dark_my_nanogallery2 .nGY2GThumbnailImageTitle,
+.nanogallery_gallerytheme_dark_my_nanogallery2 .nGY2GThumbnailAlbumTitle {
+    color: #c70039 !important;
+    font-size: 18px;
+    font-family: raleway;
+    overflow: visible;
+    Text-Shadow: #00000014 0 1px 0, #9d00008a 0 -1px 0;
+}
+
+.nGY2 .nGY2GallerySub,
+.nanogallery_gallerytheme_dark_my_nanogallery2 .nGY2GThumbnail_l1,
+.nanogallery_gallerytheme_dark_my_nanogallery2 .nGY2TnImgBack,
+.nGY2 .nGY2GThumbnailImage,
+.nanogallery_gallerytheme_dark_my_nanogallery2 .nGY2GThumbnail_lN
+{
+    width: 100%!important;
 }
