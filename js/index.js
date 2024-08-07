@@ -202,6 +202,7 @@ const messages = {
     menu: {
       home: 'HOME',
       about: 'ABOUT',
+      aboutMenu: 'ABOUT',
       portfolio: 'PORTFOLIO',
       contact: 'CONTACT',
     },
@@ -264,6 +265,7 @@ const messages = {
     menu: {
       home: 'INTRO',
       about: 'CARRERA Y CV',
+      aboutMenu: 'CARRERA',
       portfolio: 'PORTAFOLIO',
       contact: 'CONTACTO',
     },

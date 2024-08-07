@@ -12,7 +12,7 @@
    <link rel="icon" type="image/png" href="images/favicon.png">
    <!--favicon-img-->
    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-   <script src="https://unpkg.com/vue-i18n@9.12.0/dist/vue-i18n.global.js"></script>
+   <script src="https://unpkg.com/vue-i18n@9.12.0/dist/vue-i18n.global.prod.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
     <!--main css file-->
@@ -45,10 +45,18 @@
                 <span class="close-second"></span>
             </div>
             <div class="navigation-links">
-                <a href="#" data-text="INTRO" id="home-link" >{{ $t('menu.home') }}</a>
-                <a href="#" data-text="CARRERA" id="about-link" >{{ $t('menu.about') }}</a>
-                <a href="#" data-text="PORTAFOLIO" id="portfolio-link" >{{ $t('menu.portfolio') }}</a>
-                <a href="#" data-text="CONTACTO" id="contact-link" >{{ $t('menu.contact') }}</a>
+                <a href="#" :data-text="$t('menu.home')" id="home-link" >
+                    {{ $t('menu.home') }}
+                </a>
+                <a href="#" :data-text="$t('menu.aboutMenu')" id="about-link" >
+                    {{ $t('menu.about') }}
+                </a>
+                <a href="#" :data-text="$t('menu.portfolio')" id="portfolio-link" >
+                    {{ $t('menu.portfolio') }}
+                </a>
+                <a href="#" :data-text="$t('menu.contact')" id="contact-link" >
+                    {{ $t('menu.contact') }}
+                </a>
             </div>
         </div>
         <!--Navigator-Fullscreen END-->
