@@ -126,9 +126,11 @@
             </span>
             <div class="cv">
                 <a href="CV-JonathanCervantes.pdf" download="CV-JonathanCervantes.pdf" target="_blank">
-                    <button>{{ $t('about.download') }}</button>
+                    <button>
+                        {{ $t('about.download') }}
+                        <img src="img/download.svg" alt="download cv" class="colors">
+                    </button>
                 </a>
-                <a href="#"><button>Download <span class="colors">CV</span></button></a>
             </div>
             </div>
             <!--about picture-->
@@ -330,10 +332,14 @@
 
         <!--portfolio-->
         <div id="portfolio">
-            <div class="portfolio-header"> <span class="color"> Mi </span> Portfolio
-                <span class ="header-caption"> Algo de mis <span class="color"> trabajos</span></span>
+            <div class="portfolio-header">
+                <span class="color"> {{ $t('portfolio.mi') }} </span> {{ $t('portfolio.title') }}
+                <span class ="header-caption"> {{ $t('portfolio.subtitle') }}<span class="color">{{ $t('portfolio.works') }}</span> </span>
             </div>
             <div id="portfolio-content">
+                <div class="portfolio-subtitle">
+                    <p>{{ $t('portfolio.description') }}</p>
+                </div>
                 <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
                         <!-- <img src="img/transportamex.png" alt="transportamex"> -->
@@ -420,7 +426,7 @@
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h2>Transportamex</h2>
+                        <h2>Pailot</h2>
                         <p>Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México</p>
                         <div class="button"><a href="https://transportamex.com/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
@@ -431,29 +437,29 @@
 
         <!--contact-->
         <div id="contact">
-            <div class="contact-header">Contácta<span class="color">me</span>
-                <div class="contact-header-caption"> <span class="color"> A</span> tus ordenes.</div>
+            <div class="contact-header">{{ $t('contact.title') }}<span class="color">{{ $t('contact.me') }}</span>
+                <div class="contact-header-caption"> <span class="color"> {{ $t('contact.a') }}</span> {{ $t('contact.orders') }} </div>
             </div>
             <div class="contact-content">
                 
                 <!--Contact information-->
                 <div class="contact-info">
                     <div class="contact-info-header">
-                        Disponible para cotizar
+                        {{ $t('contact.subtitle') }}
                     </div>
                     <div class="contact-info-content">
                         <div class="contect-info-content-line">
                             <img src="./images/icon-name.png" class="icon" alt="name-icon">
                             <div class="contact-info-icon-text">
-                                <h6>Nombre</h6>
+                                <h6>{{ $t('contact.name') }}</h6>
                                 <p>Jonathan Cervantes</p>
                             </div>
                         </div>
                         <div class="contect-info-content-line">
                             <img src="./images/icon-location.png" class="icon" alt="location-icon">
                             <div class="contact-info-icon-text">
-                                <h6>Ubicacion</h6>
-                                <p>Ciudad de México, México</p>
+                                <h6>{{ $t('contact.location') }}</h6>
+                                <p>{{ $t('contact.city') }}</p>
                             </div>
                         </div>
                         <div class="contect-info-content-line">
@@ -473,7 +479,7 @@
                         <div class="contect-info-content-line">
                             <img src="./images/icon-email.png" class="icon" alt="email-icon">
                             <div class="contact-info-icon-text">
-                                <h6>Email</h6>
+                                <h6>{{ $t('contact.email') }}</h6>
                                 <a href="Mailto:jhonncerv@gmail.com" target="_blank" class="contact-tel"><p>jhonncerv@gmail.com</p></a>
                             </div>
                         </div>
@@ -499,7 +505,7 @@
         const { createI18n, useI18n } = VueI18n
 
         const i18n = createI18n({
-            locale: 'es',
+            locale: 'en',
             fallbackLocale: 'en',
             messages
         })

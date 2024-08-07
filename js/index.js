@@ -229,9 +229,27 @@ const messages = {
         title: 'Academic',
         description: 'Programming courses, from basic to advanced level.'
       },
-    my: 'My',
-    skills: 'Skills',
+      my: 'Mis',
+      skills: 'Habilidades',
     },
+    contact: {
+      title: 'Contact',
+      me: 'me',
+      a: 'Get',
+      orders: 'In Touch.',
+      subtitle: 'Do you have a project in mind? Let\'s talk!',
+      location: "Location",
+      name: 'Name',
+      city: 'Mexico City, Mexico',
+      email: 'Email',
+    },
+    portfolio: {
+      mi: ' My ',
+      title: 'Portfolio',
+      subtitle: 'Some of my ',
+      works: 'previous projects',
+      description: 'Here you can see some of the projects I have worked on, from web pages to administration systems.'
+    }
   },
   es: {
     message: {
@@ -273,5 +291,23 @@ const messages = {
       my: 'Mis',
       skills: 'Habilidades',
     },
+    contact: {
+      title: 'Contácta',
+      me: 'me',
+      a: 'a',
+      orders: 'tus ordenes.',
+      subtitle: '¿Tienes un proyecto en mente? ¡Hablemos!',
+      location: "Ubicación",
+      name: 'Nombre',
+      city: 'Ciudad de México, México',
+      email: 'Correo',
+    },
+    portfolio: {
+      mi: ' Mi ',
+      title: 'Portafolio',
+      subtitle: 'Algunos de mis',
+      works: 'trabajos',
+      description: 'Aquí puedes ver algunos de los proyectos en los que he trabajado, desde páginas web hasta sistemas de administración.'
+    }
   }
 }

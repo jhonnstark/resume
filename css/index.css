@@ -389,8 +389,8 @@ body{
     transform: scale(1.1);
 }
 .contact-tel {
-    color: #fff;
-    text-decoration: none;
+    color: #abe5ff;
+    text-decoration: underline;
 }
 #breaker{
     height: 100vh;
@@ -513,7 +513,7 @@ body{
 
 #about-content a{
     text-decoration: none;
-    font-family: aileron;
+    font-family: poppins;
     font-weight: 400;
     font-size: 35px;
     color: #c70039;
@@ -523,14 +523,13 @@ body{
     padding-top: 40px;
 }
 .cv a button{
-    background: transparent;
     border:none;
     padding: 15px 30px;
     color: whitesmoke;
     background: #c70039;
     outline: none;
     font-size:20px;
-    font-family: aileron;
+    font-family: poppins;
     border-radius: 4px;
     font-weight: 400;
     cursor: pointer;
@@ -541,6 +540,9 @@ body{
 .cv a button:hover{
     opacity: 1;
     transform: scale(1.05);
+}
+.cv a button .colors {
+    vertical-align: bottom;
 }
 #services{
     position: relative;
@@ -818,6 +820,14 @@ body{
     padding-bottom: 30px;
     padding-top: 60px;
     font-weight: 900;
+}
+.portfolio-subtitle p {
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 20px;
+    text-align: center;
 }
 
 .header-caption{
@@ -2007,7 +2017,7 @@ for tabs and large phones
         padding-top: 10px;
         border-radius: 40px;
     }
-    .cv a button{
+    .cv a button {
         border:none;
         padding: 20px 30px;
         color: whitesmoke;
@@ -2376,16 +2386,19 @@ for tabs and large phones
         background: transparent;
         border:none;
         padding: 25px 35px;
-        color: whitesmoke;
+        color: #c70039;
         outline: none;
         font-size:30px;
-        font-family: aileron;
         border-radius: 4px;
         font-weight: 400;
         cursor: pointer;
         position: relative;
         transition: all .4s ease;
-    
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .cv a button .colors {
+        vertical-align: inherit;
     }
     .service{
         height:400px;
