@@ -11,21 +11,24 @@
   <!--favicon-img--> 
    <link rel="icon" type="image/png" href="images/favicon.png">
    <!--favicon-img-->
-    <!--main css file-->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <script src="https://unpkg.com/vue-i18n@9.12.0/dist/vue-i18n.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <!--main css file-->
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!--contains all the div-->
-    <div id="all">
+    <!--contains app the div-->
+    <div id="app">
     <!--mouse  follower-->
         <div class="cursor"></div>
     <!--mouse  follower-->
     <!--loader-->
         <div id="loader">
-            <span class="color">Jonathan</span>Cervantes 
+            <span class="color">Jonathan</span>Cervantes
         </div>
     <!--loader-end-->
     <!--link-screen-->
@@ -42,10 +45,10 @@
                 <span class="close-second"></span>
             </div>
             <div class="navigation-links">
-                <a href="#" data-text="INTRO" id="home-link" >INTRO</a>
-                <a href="#" data-text="CARRERA" id="about-link" >CARRERA Y CV</a>
-                <a href="#" data-text="PORTAFOLIO" id="portfolio-link" >PORTAFOLIO</a>
-                <a href="#" data-text="CONTACTO" id="contact-link" >CONTACTO</a>
+                <a href="#" data-text="INTRO" id="home-link" >{{ $t('menu.home') }}</a>
+                <a href="#" data-text="CARRERA" id="about-link" >{{ $t('menu.about') }}</a>
+                <a href="#" data-text="PORTAFOLIO" id="portfolio-link" >{{ $t('menu.portfolio') }}</a>
+                <a href="#" data-text="CONTACTO" id="contact-link" >{{ $t('menu.contact') }}</a>
             </div>
         </div>
         <!--Navigator-Fullscreen END-->
@@ -64,15 +67,26 @@
             <div id="particles"></div>
               <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://www.linkedin.com/in/jonathan-cervantes-910b9014a/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://www.linkedin.com/in/jonathan-cervantes-910b9014a/">
+                    <img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo">
+                </a>
+                <a href="https://github.com/jhonnstark">
+                    <img src="img/github.svg" class="social-media" alt="github-logo">
+                </a>
             </div>
             <!--Social Media Links end-->
             <div class="header-content">
                 <div class="header-content-box">
-                    <div class="firstline"><span class="color">Jonathan </span>Cervantes</div>
+                    <div class="firstline">
+                        <span class="color">Jonathan </span>Cervantes
+                    </div>
                     <div class="secondline">
-                    Soy
-                        <span class="txt-rotate color" data-period="1200"data-rotate='[ " Programador.", " Desarrollador.", " Freelancer." ]'></span>
+                        {{ $t('header.subtitle') }}
+                        <span
+                            class="txt-rotate color"
+                            data-period="1200"
+                            :data-rotate="$t('header.rotate')"
+                        ></span>
                         <span class="slash">|</span>
                     </div>
                     <div class="contact">
@@ -96,20 +110,25 @@
             <!--about content-->
             <div id="about-content">
                 <div class="about-header">
-                    Carrera <span class="color">profesional</span>
-                    <span class ="header-caption">Descarga mi <span class="color"> CV.</span></span>
+                    {{ $t('about.career') }} <span class="color">{{ $t('about.professional') }}</span>
+                    <span class ="header-caption">{{ $t('about.download') }}<span class="color"> {{ $t('about.resume') }}</span></span>
                 </div>
                 <div class="about-main">
             <div class="about-first-paragraph wow">
             <!--about description-->
             <span class="about-first-line">
-                    Soy un
-                    <span class="color">desarrollador Web</span>
-                    especializado en <span class="color">Laravel</span> </span>
+                {{ $t('about.iam') }}
+                    <span class="color">{{ $t('about.developer') }}</span>
+                    {{ $t('about.specialized') }} <span class="color">Laravel</span> </span>
                     <br>
-            <span class="about-second-line"> Con más de 10 años de experiencia profesional, responsable y acostumbrado a trabajar en proyectos a entregar en tiempo y bajo presión, tengo los conocimientos para llevar a término tu proyecto. Me gustan los nuevos retos y disfruto cada proyecto nuevo.  </span>
+            <span class="about-second-line">
+                {{ $t('about.description') }}
+            </span>
             <div class="cv">
-                <a href="CV-JonathanCervantes.pdf" download="CV-JonathanCervantes.pdf" target="_blank"><button>Descargar <span class="colors">CV</span></button></a>
+                <a href="CV-JonathanCervantes.pdf" download="CV-JonathanCervantes.pdf" target="_blank">
+                    <button>{{ $t('about.download') }}</button>
+                </a>
+                <a href="#"><button>Download <span class="colors">CV</span></button></a>
             </div>
             </div>
             <!--about picture-->
@@ -123,7 +142,7 @@
             <div id="services">
             <!--services header-->
                     <div class="services-heading wow">
-                        Lo que me <span class="color">apaciona</span>
+                        {{ $t('about.my') }} <span class="color">{{ $t('about.services') }}</span>
                     </div>
             <!--services header end-->
             <!--services content-->
@@ -133,8 +152,8 @@
                             <img src="images/coding.png" alt="service-one">
                             </div>
                             <div class="service-description">
-                                <h2>Desarrollo Web</h2>
-                                <p>Consrtuccion de paginas web, sistemas de administracion y APIs en diferentes lenguajes</p>
+                                <h2>{{ $t('about.design.title') }}</h2>
+                                <p>{{ $t('about.design.description') }}</p>
                             </div>
                         </div>
                         <div class="service-two service wow">
@@ -142,8 +161,8 @@
                             <img src="images/basededatos.png" alt="service-two">
                             </div>
                             <div class="service-description">
-                                <h2>Base de datos</h2>
-                                <p>Administración, diseño y programación de base de datos</p>
+                                <h2>{{ $t('about.dataBase.title') }}</h2>
+                                <p>{{ $t('about.dataBase.description') }}</p>
                             </div>
                         </div>
                         <div class="service-three service wow">
@@ -151,8 +170,8 @@
                             <img src="images/bulb.png" alt="service-three">
                             </div>
                             <div class="service-description">
-                                <h2>Academico</h2>
-                                <p>Cursos de programación, de nivel basico a avanzado.</p>
+                                <h2>{{ $t('about.academic.title') }}</h2>
+                                <p>{{ $t('about.academic.description') }}</p>
                             </div>
                         </div>
                     </div>
@@ -161,7 +180,7 @@
             <!--services end-->
             <div id="skills">
                 <div class="skills-header">
-                    Mis <span class="color"> Habilidades</span>
+                    {{ $t('about.my') }} <span class="color"> {{ $t('about.skills') }}</span>
                 </div>
                 <div class="skills-content " style="text-align: center;">
                     <div class="skill-html skill">
@@ -227,6 +246,26 @@
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
+                                Golang
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="php-progress wow">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Redis
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="ReactJS-progress wow">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
                                 JQuery
                             </div>
                         </div>
@@ -257,17 +296,17 @@
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                C++
+                                CCS3
                             </div>
                         </div>
                         <div class="html-prog wow prog">
-                            <div class="Unity-progress wow">50%</div>
+                            <div class="Wordpress-progress wow">90%</div>
                         </div>
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                Unity
+                                NodeJS
                             </div>
                         </div>
                         <div class="html-prog wow prog">
@@ -342,7 +381,7 @@
                             "thumbnailOpenImage": true
                         }'>
                             <!-- SECOND ALBUM -->
-                            <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="buso0.png" >Album B</a>
+                            <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="buso0.png" >Busolinea</a>
                             <a href="buso.jpg" data-ngid="20" data-ngalbumid="2" data-ngthumb="buso0.png"    >Busolinea</a>
                             <a href="buso3.jpg" data-ngid="23" data-ngalbumid="2" data-ngthumb="buso.png"    >Busolinea</a>
                             <a href="buso1.jpg" data-ngid="21" data-ngalbumid="2" data-ngthumb="buso1.png"    >Busolinea</a>
@@ -351,9 +390,9 @@
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h2>Transportamex</h2>
-                        <p>Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México</p>
-                        <div class="button"><a href="https://transportamex.com/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
+                        <h2>Busolinea</h2>
+                        <p>Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.</p>
+                        <div class="button"><a href="https://busolinea.com.mx/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
                 <div class="portfolio portfolio-first">
@@ -372,7 +411,7 @@
                             "thumbnailOpenImage": true
                         }'>
                             <!-- SECOND ALBUM -->
-                            <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="pailot3.png" >Album B</a>
+                            <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="pailot3.png">Pailot</a>
                             <a href="pailot2.jpg" data-ngid="30" data-ngalbumid="3" data-ngthumb="pailot2.jpg"    >Pailot</a>
                             <a href="pailot.jpg" data-ngid="31" data-ngalbumid="3" data-ngthumb="pailot.jpg"    >Pailot</a>
                             <a href="pailot4.jpg" data-ngid="32" data-ngalbumid="3" data-ngthumb="pailot4.png"    >Pailot</a>
@@ -417,13 +456,13 @@
                                 <p>Ciudad de México, México</p>
                             </div>
                         </div>
-                        <!-- <div class="contect-info-content-line">
-                            <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                        <div class="contect-info-content-line">
+                            <img src="img/github.svg" class="icon" alt="github-icon">
                             <div class="contact-info-icon-text">
-                                <h6>Teléfono</h6>
-                                <a href="tel:+525611777736" class="contact-tel"><p>+52 56 11 7777 36</p></a>
+                                <h6>Github</h6>
+                                <a href="https://github.com/jhonnstark" class="contact-tel"><p>jhonnstark</p></a>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="contect-info-content-line">
                             <img src="./images/whatsapp.png" class="icon" alt="phone-icon">
                             <div class="contact-info-icon-text">
@@ -452,12 +491,51 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
     <script src="js/index.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+    <script>
+        const { createApp, ref } = Vue
+        const { createI18n, useI18n } = VueI18n
+
+        const i18n = createI18n({
+            locale: 'es',
+            fallbackLocale: 'en',
+            messages
+        })
+
+        const app = createApp({
+            setup() {
+                const message = ref('Hello! ')
+                return {
+                    message
+                }
+            }
+        })
+        app.use(i18n)
+        app.mount('#app')
+
+        //const t = useI18n()
+    </script>
 
     <!--particles script-->
     <script>
-  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66b1c7cf32dca6db2cba6f99/1i4j790s3';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
 </body>
 </html>

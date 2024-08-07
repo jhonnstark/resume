@@ -78,6 +78,7 @@ $(function(){
             new TxtRotate(elements[i], JSON.parse(toRotate), period);
           }
         }
+
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
@@ -188,5 +189,89 @@ $(function(){
   $('.menubar').hover(cursorhover,cursor);
   $('a').hover(cursorhover,cursor);
   $('.navigation-close').hover(cursorhover,cursor);
-
 })
+
+const messages = {
+  en: {
+    message: {
+      hello: 'hello world'
+    },
+    menu: {
+      home: 'HOME',
+      about: 'ABOUT',
+      portfolio: 'PORTFOLIO',
+      contact: 'CONTACT',
+    },
+    header: {
+      subtitle: 'I am a',
+      rotate: '[ " Programmer.", " Developer.", " Freelancer." ]',
+    },
+    about: {
+      career: 'Professional',
+      professional: 'career',
+      download: 'Download ',
+      resume: 'resume.',
+      description: 'With more than 10 years of professional experience, responsible and used to work on projects to be delivered on time and under pressure, I have the knowledge to complete your project. I like new challenges and enjoy every new project.',
+      iam: 'I am a',
+      developer: 'Web developer',
+      specialized: 'specialized in',
+      my: 'My',
+      services: 'Services',
+      design:{
+        title: 'Web Development',
+        description: 'Web page development, administration systems and APIs in different languages',
+      },
+      dataBase: {
+        title: 'Database',
+        description: 'Database administration, design and programming'
+      },
+      academic: {
+        title: 'Academic',
+        description: 'Programming courses, from basic to advanced level.'
+      },
+    my: 'My',
+    skills: 'Skills',
+    },
+  },
+  es: {
+    message: {
+      hello: 'hola'
+    },
+    menu: {
+      home: 'INTRO',
+      about: 'CARRERA Y CV',
+      portfolio: 'PORTAFOLIO',
+      contact: 'CONTACTO',
+    },
+    header: {
+      subtitle: 'Soy',
+      rotate: '[ " Programador.", " Desarrollador.", " Freelancer." ]',
+    },
+    about: {
+      career: 'Carrera',
+      professional: 'profesional',
+      download: 'Descarga mi ',
+      resume: 'CV.',
+      description: 'Con más de 10 años de experiencia profesional, responsable y acostumbrado a trabajar en proyectos a entregar en tiempo y bajo presión, tengo los conocimientos para llevar a término tu proyecto. Me gustan los nuevos retos y disfruto cada proyecto nuevo.',
+      iam: 'Soy un',
+      developer: 'desarrollador Web',
+      specialized: 'especializado en',
+      my: 'Lo que me',
+      services: 'apaciona',
+      design:{
+        title: 'Desarrollo Web',
+        description: 'Consrtuccion de paginas web, sistemas de administracion y APIs en diferentes lenguajes',
+      },
+      dataBase: {
+        title: 'Base de datos',
+        description: 'Administracion, diseño y programacion de base de datos'
+      },
+      academic: {
+        title: 'Academico',
+        description: 'Cursos de programacion, desde nivel basico hasta avanzado.'
+      },
+      my: 'Mis',
+      skills: 'Habilidades',
+    },
+  }
+}

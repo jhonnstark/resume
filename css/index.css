@@ -1124,7 +1124,7 @@ padding-bottom: 40px;
 }
 .contact-info{
     width: 40%;
-    height: 500px;
+    height: 590px;
     background: url(../images/contact-back.jpg);
     background-position: center;
     background-size: cover;
@@ -1245,7 +1245,7 @@ form button:hover{
     flex-direction: row;
     align-items: center;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 20%;
 }
 .contact-info-icon-text{
     color: whitesmoke;
@@ -2013,7 +2013,7 @@ for tabs and large phones
         color: whitesmoke;
         outline: none;
         font-size:20px;
-        font-family: aileron;
+        font-family: poppins;
         border-radius: 8px;
         font-weight: 400;
         cursor: pointer;
