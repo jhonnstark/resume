@@ -1294,7 +1294,7 @@ form button:hover{
 .footer{
     background: #080808;
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -1305,9 +1305,21 @@ form button:hover{
 .footer .footer-text{
     position: relative;
     display: inline;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     opacity: 1;
+    margin-right: 6px;
+}
+.footer .images{
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.footer-flag {
+    color: #BB0035;
+    cursor: pointer;
+}
+.footer-lc {
+    font-size: 14px;
 }
 .color-changer{
     height: auto;

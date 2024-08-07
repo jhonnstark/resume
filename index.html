@@ -23,20 +23,20 @@
 <body>
     <!--contains app the div-->
     <div id="app">
-    <!--mouse  follower-->
+        <!--mouse  follower-->
         <div class="cursor"></div>
-    <!--mouse  follower-->
-    <!--loader-->
+        <!--mouse  follower-->
+        <!--loader-->
         <div id="loader">
             <span class="color">Jonathan</span>Cervantes
         </div>
-    <!--loader-end-->
-    <!--link-screen-->
+        <!--loader-end-->
+        <!--link-screen-->
         <div id="breaker">
         </div>
         <div id="breaker-two">
         </div>
-    <!--link-screen-->
+        <!--link-screen-->
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
@@ -328,7 +328,7 @@
                 </div>
             </div>
         </div>
-    <!--about end-->
+        <!--about end-->
 
         <!--portfolio-->
         <div id="portfolio">
@@ -492,6 +492,30 @@
             </div>
         </div>
         <!--contact end-->
+        
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+            <div class="footer-text">
+                <span>{{ $t('footer.select') }}</span>
+            </div>
+            <div
+                v-if="$i18n.locale === 'en'"
+                class="footer-flag"
+                @click="changeLanguage"
+            >     
+                <img src="./img/mex.png" alt="mex-img" class="images" height="14px"> 
+                <span class="footer-lc">Es</span>
+            </div>
+            <div
+                v-else
+                class="footer-flag"
+                @click="changeLanguage"
+            >
+                <img src="./img/us.png" alt="mex-img" class="images" height="14px"> 
+                <span class="footer-lc">En</span>
+            </div>
+        </div>
+        <!--copyright-section-->
     </div>
     <!--all the divisions-->
 
@@ -502,7 +526,7 @@
 
     <script>
         const { createApp, ref } = Vue
-        const { createI18n, useI18n } = VueI18n
+        const { createI18n, useI18 } = VueI18n
 
         const i18n = createI18n({
             locale: 'en',
@@ -513,15 +537,22 @@
         const app = createApp({
             setup() {
                 const message = ref('Hello! ')
-                return {
-                    message
+                changeLanguage = () => {
+                    console.log("changeLanguage")
+                    console.log(i18n.global.locale)
+                    i18n.global.locale = i18n.global.locale === 'en' ? 'es' : 'en'
+                    console.log(i18n.global.locale)
+                    //rotateText()
                 }
-            }
+                return {
+                    message,
+                    changeLanguage
+                }
+            },
         })
         app.use(i18n)
         app.mount('#app')
 
-        //const t = useI18n()
     </script>
 
     <!--particles script-->

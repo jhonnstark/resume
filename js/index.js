@@ -28,56 +28,9 @@ $(function(){
    }); 
 
 $(function(){
-    var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-      };
-      
-      TxtRotate.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-      
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-      
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-      
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-      
-        if (this.isDeleting) { delta /= 2; }
-      
-        if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 100;
-        }
-      
-        setTimeout(function() {
-          that.tick();
-        }, delta);
-      };
       
       window.onload = function() {
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i=0; i<elements.length; i++) {
-          var toRotate = elements[i].getAttribute('data-rotate');
-          var period = elements[i].getAttribute('data-period');
-          if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-          }
-        }
+        rotateText();
 
         // INJECT CSS
         var css = document.createElement("style");
@@ -86,6 +39,56 @@ $(function(){
         document.body.appendChild(css);
       };
 })
+var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 100;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+function rotateText(){
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+}
 $(function(){
 
     $('#about-link').on('click',function(){
@@ -249,6 +252,9 @@ const messages = {
       subtitle: 'Some of my ',
       works: 'previous projects',
       description: 'Here you can see some of the projects I have worked on, from web pages to administration systems.'
+    },
+    footer: {
+      select: 'Select a language: ',
     }
   },
   es: {
@@ -268,7 +274,7 @@ const messages = {
     about: {
       career: 'Carrera',
       professional: 'profesional',
-      download: 'Descarga mi ',
+      download: 'Descarga mi CV',
       resume: 'CV.',
       description: 'Con más de 10 años de experiencia profesional, responsable y acostumbrado a trabajar en proyectos a entregar en tiempo y bajo presión, tengo los conocimientos para llevar a término tu proyecto. Me gustan los nuevos retos y disfruto cada proyecto nuevo.',
       iam: 'Soy un',
@@ -308,6 +314,9 @@ const messages = {
       subtitle: 'Algunos de mis',
       works: 'trabajos',
       description: 'Aquí puedes ver algunos de los proyectos en los que he trabajado, desde páginas web hasta sistemas de administración.'
+    },
+    footer: {
+      select: 'Cambia el idioma',
     }
   }
 }
