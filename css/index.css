@@ -840,48 +840,80 @@ body{
     color: whitesmoke;
     font-weight: 400;
 }
-.portfolio{
+
+.portfolio {
+    background: #080808;
     height:auto;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5%;
-    padding-right: 2%;
-padding-top: 50px;
-padding-bottom: 40px;
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
 }
-
-.portfolio-text{
-    width: 40%;
-    padding-left: 1%;
-    margin: 1%;
-    margin-left: -40px;
-    margin-top: 160px;
-    z-index: 3;
-    opacity: 1;
-    background: #080808;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.portfolio-text h2{
-    font-size: 35px;
+.portfolio h2{
+    font-size: 25px;
     font-family: poppins;
     font-weight: 200;
-    padding: 20px;
+    padding: 10px;
     color: #c70039;
     transition: all .4s ease;
 }
-.portfolio-text p{
+
+.portfolio-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.portfolio-image {
+    width: 45%;
+    overflow: hidden;
+    height: 150px;
+}
+
+.portfolio-image img{
+    width: 100%;
+    position: relative;
+}
+
+/* .portfolio-image img::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #c70039;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    transition: all .4s ease;
+    position: absolute;
+    z-index: 2;
+} */
+
+.portfolio-text {
+    width: 90%;
+    margin: 1% auto;
+    z-index: 3;
+    opacity: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-text p {
     font-size: 16px;
     opacity: .8;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
 }
-.portfolio-text button{
+.portfolio-text button {
     font-size: 16px;
     opacity: .8;
     font-family: poppins;
@@ -925,37 +957,14 @@ padding-bottom: 40px;
 .button{
     text-align: center;
 }
-
-
-.portfolio-image {
-    width: 100%;
-}
-
-.portfolio-image img{
-    /* height: 400px; */
-    /* width: 100%; */
-    width: 40%;
-    position: relative;
-}
-
-.portfolio-image img::before{
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: #c70039;
-    opacity: .1;
-    top: 0;
-    left: 0;
-    transition: all .4s ease;
-    position: absolute;
-    z-index: 2;
-}
 #portfolio-content{
     width: 100%;
     display: flex;
     height: auto;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 #portfolio{
@@ -1011,7 +1020,9 @@ padding-bottom: 40px;
     transition:  scale .4s ease;
 }
 
-#blog{
+#transportamex,
+#pailot,
+#busolinea {
     background: #101010;
     display: none;
     color:whitesmoke;
@@ -1093,6 +1104,46 @@ padding-bottom: 40px;
 .blogs a{
     text-decoration: none;
     color: whitesmoke;
+}
+.blog-text button {
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 10px 20px;
+    background:transparent;
+    color:#c70039;
+    transition: all .4s ease;
+    outline: none;
+    margin: 20px;
+    border: 1.5px solid #c70039;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+.blog-text button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #c70039;
+    transition: all .7s ease;
+}
+.blog-text button:hover{
+    opacity: 1;
+    color:whitesmoke;
+}
+.blog-text button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+.button{
+    text-align: center;
 }
 #contact{
     display: none;
@@ -1610,21 +1661,39 @@ For devices with smaller width like mobile phone
         margin-top: 20px;
         margin-bottom: 15px;
     }
+    
+#portfolio-content{
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
     .portfolio{
         height:auto;
-        width: 100%;
+        width: 45%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 1.5%;
-        padding-right: 2%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+        padding: 10px;
+        margin: 0 0 20px;
+    }
+    
+.portfolio-wrap {
+    padding: 5px;
+}
+    .portfolio h2{
+        font-size: 18px;
+        font-family: poppins;
+        font-weight: 200;
+        padding: 10px;
     }
     .portfolio-text{
-        width: 90%;
-        max-width: 500px;
+        width: 100%;
         padding-left: 0%;
         margin: 0%;
         margin-left: 0px;
@@ -1633,36 +1702,30 @@ For devices with smaller width like mobile phone
         background: #070707;
         padding-top: 10px;
         padding-bottom: 10px;
+        flex-direction: column;
     }
-        .portfolio-image{
-            position: relative;
-        }
-            .portfolio-text h2{
-                font-size: 22px;
-                font-family: poppins;
-                font-weight: 200;
-                padding: 10px;
-            }
-            .portfolio-text p{
-                font-size: 15px;
-                opacity: .8;
-                font-family: poppins;
-                font-weight: 200;
-                padding: 15px;
-            }
+    .portfolio-image{
+        height: 50px;
+    }
+    .portfolio-image img{
+        width: 100%;
+    }
+    .portfolio-text p {
+        font-size: 12px;
+        opacity: .8;
+        font-family: poppins;
+        font-weight: 200;
+        padding: 10px 15px;
+    }
+    .portfolio-text button {
+        margin: 5px auto;
+    }
+
             .cursor{
                 display: none;
             }
             .service:hover .service-img img{
                 box-shadow:0px 0px 0px 0px #c70039 ;
-            }
-            .portfolio-image img{
-                /* height: 300px; */
-                width: 100%;
-            }
-            .portfolio-image{
-                /* height: 300px; */
-                width: 90%;
             }
             #navigation-bar img{
                 height: 80px;

@@ -95,11 +95,14 @@ $(function(){
       gsap.to('#navigation-content',0,{display:"none",delay:.7});
       gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
   gsap.to('#header',0,{display:"none"});
-gsap.to('#blog',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
 gsap.to('#portfolio',0,{display:"none"});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"none"});
+gsap.to('#busolinea',0,{display:"none"});
+gsap.to('#pailot',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
    gsap.to('#breaker',0,{display:"none",delay:2});
    gsap.to('#breaker-two',0,{display:"none",delay:2});
    gsap.to('#about',0,{display:"block",delay:.7});
@@ -110,7 +113,9 @@ gsap.to('#contact',0,{display:"none"});
    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"none"});
 gsap.to('#about',0,{display:"none"});
-gsap.to('#blog',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
+gsap.to('#busolinea',0,{display:"none"});
+gsap.to('#pailot',0,{display:"none"});
 gsap.to('#portfolio',0,{display:"none"});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -125,7 +130,9 @@ $('#portfolio-link').on('click',function(){
 gsap.to('#header',0,{display:"none"});
 gsap.to('#about',0,{display:"none"});
 gsap.to('#contact',0,{display:"none"});
-gsap.to('#blog',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
+gsap.to('#busolinea',0,{display:"none"});
+gsap.to('#pailot',0,{display:"none"});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
@@ -133,18 +140,50 @@ gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
-$('#blog-link').on('click',function(){
+$('#transportamex-link').on('click',function(){
+  gsap.to('#navigation-content',0,{display:"none",delay:.7});
+  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+gsap.to('#header',0,{display:"none"});
+gsap.to('#about',0,{display:"none"});
+gsap.to('#portfolio',0,{display:"none"});
+gsap.to('#contact',0,{display:"none"});c
+gsap.to('#breaker',0,{display:"block"});
+gsap.to('#breaker-two',0,{display:"block",delay:.1});
+gsap.to('#breaker',0,{display:"none",delay:2});
+gsap.to('#breaker-two',0,{display:"none",delay:2});
+gsap.to('#transportamex',0,{display:"block",delay:.7});
+gsap.to('#navigation-content',0,{display:'flex',delay:2});
+})
+$('#busolinea-link').on('click',function(){
   gsap.to('#navigation-content',0,{display:"none",delay:.7});
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"none"});
 gsap.to('#about',0,{display:"none"});
 gsap.to('#portfolio',0,{display:"none"});
 gsap.to('#contact',0,{display:"none"});
+gsap.to('#pailot',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#busolinea',0,{display:"block",delay:.7});
+gsap.to('#navigation-content',0,{display:'flex',delay:2});
+})
+$('#pailot-link').on('click',function(){
+  gsap.to('#navigation-content',0,{display:"none",delay:.7});
+  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+gsap.to('#header',0,{display:"none"});
+gsap.to('#about',0,{display:"none"});
+gsap.to('#portfolio',0,{display:"none"});
+gsap.to('#contact',0,{display:"none"});
+gsap.to('#busolinea',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
+gsap.to('#breaker',0,{display:"block"});
+gsap.to('#breaker-two',0,{display:"block",delay:.1});
+gsap.to('#breaker',0,{display:"none",delay:2});
+gsap.to('#breaker-two',0,{display:"none",delay:2});
+gsap.to('#pailot',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 $('#home-link').on('click',function(){
@@ -154,7 +193,9 @@ gsap.to('#header',0,{display:"none"});
 gsap.to('#about',0,{display:"none"});
 gsap.to('#portfolio',0,{display:"none"});
 gsap.to('#contact',0,{display:"none"});
-gsap.to('#blog',0,{display:"none"});
+gsap.to('#transportamex',0,{display:"none"});
+gsap.to('#busolinea',0,{display:"none"});
+gsap.to('#pailot',0,{display:"none"});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
@@ -254,6 +295,21 @@ const messages = {
       works: 'previous projects',
       description: 'Here you can see some of the projects I have worked on, from web pages to administration systems.'
     },
+    transportamex: {
+      title: 'Web page',
+      date: 'May,2020',
+      description: 'Purchase of tickets and consultation of routes and prices of the main bus routes in Mexico.'
+    },
+    pailot: {
+      title: 'Blog',
+      date: 'September, 2018',
+      description: 'Pailot is a transport application that allows you to request trips from the Central del Norte in Mexico City.'
+    },
+    busolinea: {
+      title: 'Web page',
+      date: 'july, 2019',
+      description: 'Busolinea allows you to buy bus tickets and know the routes, schedules, prices, promotions and lines of Grupo Estrella Blanca that travel the country.'
+    },
     footer: {
       select: 'Select a language: ',
     }
@@ -316,6 +372,21 @@ const messages = {
       subtitle: 'Algunos de mis',
       works: 'trabajos',
       description: 'Aquí puedes ver algunos de los proyectos en los que he trabajado, desde páginas web hasta sistemas de administración.'
+    },
+    transportamex: {
+      title: 'Pagina web',
+      date: 'Mayo,2020',
+      description: 'Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México.'
+    },
+    pailot: {
+      title: 'Blog',
+      date: 'septiembre, 2018',
+      description: 'Pailot es una aplicación de transporte que te permite solicitar viajes desde la Central del Norte en Ciudad de México. '
+    },
+    busolinea: {
+      title: 'Pagina web',
+      date: 'julio, 2019',
+      description: 'Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.'
     },
     footer: {
       select: 'Cambia el idioma',

@@ -343,102 +343,85 @@
             <div class="portfolio-header">
                 <span class="color"> {{ $t('portfolio.mi') }} </span> {{ $t('portfolio.title') }}
                 <span class ="header-caption"> {{ $t('portfolio.subtitle') }}<span class="color">{{ $t('portfolio.works') }}</span> </span>
-            </div>
-            <div id="portfolio-content">
+            
                 <div class="portfolio-subtitle">
                     <p>{{ $t('portfolio.description') }}</p>
                 </div>
-                <div class="portfolio portfolio-first">
-                    <div class="portfolio-image">
-                        <!-- <img src="img/transportamex.png" alt="transportamex"> -->
+            </div>
 
-                        <div id="my_nanogallery1" data-nanogallery2='{
-                            "itemsBaseURL": "img/",
-                            "thumbnailHeight":  450,
-                            "thumbnailWidth": "500",
-                            "thumbnailLabel": {
-                                "position": "overImageOnBottom"
-                            },
-                            "thumbnailAlignment": "center",
-                            "thumbnailOpenImage": true
-                        }'>
-                            <!-- FIRST ALBUM -->
-                            <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="transportamex.png">Transportamex</a>
-                            <a href="transportamex.png" data-ngid="10" data-ngalbumid="1" data-ngthumb="transportamex.png" >Landing page</a>
-                            <a href="transportamex2.png" data-ngid="11" data-ngalbumid="1" data-ngthumb="transportamex2.png" >Servicios</a>
-                            <a href="transportamex3.png" data-ngid="12" data-ngalbumid="1" data-ngthumb="transportamex2.png" >Footer</a>
-                            <a href="transportamex6.png" data-ngid="16" data-ngalbumid="1" data-ngthumb="transportamex2.png" >Destinos</a>
-                            <a href="transportamex5.png" data-ngid="15" data-ngalbumid="1" data-ngthumb="transportamex2.png" >Lineas</a>
-                            
+            <div id="portfolio-content">
+                
+                <div class="portfolio portfolio-first" id="transportamex-link">
+                    <h2>Transportamex</h2>
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-image">
+                            <img src="img/transportamex.png" alt="transportamex">
                         </div>
-                    </div>
-
-                    <div class="portfolio-text">
-                        <h2>Transportamex</h2>
-                        <p>Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México</p>
-                        <div class="button"><a href="https://transportamex.com/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                <div class="portfolio portfolio-first">
-                    
-                    <div class="portfolio-image">
-                        <!-- <img src="img/transportamex.png" alt="transportamex"> -->
-
-                        <div id="my_nanogallery2" data-nanogallery2='{
-                            "itemsBaseURL": "img/",
-                            "thumbnailHeight":  450,
-                            "thumbnailWidth": "500",
-                            "thumbnailLabel": {
-                                "position": "overImageOnBottom"
-                            },
-                            "thumbnailAlignment": "center",
-                            "thumbnailOpenImage": true
-                        }'>
-                            <!-- SECOND ALBUM -->
-                            <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="buso0.png" >Busolinea</a>
-                            <a href="buso.jpg" data-ngid="20" data-ngalbumid="2" data-ngthumb="buso0.png"    >Busolinea</a>
-                            <a href="buso3.jpg" data-ngid="23" data-ngalbumid="2" data-ngthumb="buso.png"    >Busolinea</a>
-                            <a href="buso1.jpg" data-ngid="21" data-ngalbumid="2" data-ngthumb="buso1.png"    >Busolinea</a>
-                            <a href="buso2.jpg" data-ngid="22" data-ngalbumid="2" data-ngthumb="buso2.png"    >Busolinea</a>
-                        
+                        <div class="portfolio-image">
+                            <img src="img/transportamex2.png" alt="transportamex">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/transportamex3.png" alt="transportamex">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/transportamex5.png" alt="transportamex">
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h2>Busolinea</h2>
-                        <p>Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.</p>
-                        <div class="button"><a href="https://busolinea.com.mx/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
+                        <p>{{ $t('transportamex.description') }}</p>
+                        <!-- <div class="button">
+                            <a href="https://transportamex.com/" target="_blank">
+                                <button>
+                                    <span class="index"> Ver<i class="gg-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
-                <div class="portfolio portfolio-first">
-                    
-                    <div class="portfolio-image">
-                        <!-- <img src="img/transportamex.png" alt="transportamex"> -->
-
-                        <div id="my_nanogallery3" data-nanogallery2='{
-                            "itemsBaseURL": "img/",
-                            "thumbnailHeight":  450,
-                            "thumbnailWidth": "500",
-                            "thumbnailLabel": {
-                                "position": "overImageOnBottom"
-                            },
-                            "thumbnailAlignment": "center",
-                            "thumbnailOpenImage": true
-                        }'>
-                            <!-- SECOND ALBUM -->
-                            <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="pailot3.png">Pailot</a>
-                            <a href="pailot2.jpg" data-ngid="30" data-ngalbumid="3" data-ngthumb="pailot2.jpg"    >Pailot</a>
-                            <a href="pailot.jpg" data-ngid="31" data-ngalbumid="3" data-ngthumb="pailot.jpg"    >Pailot</a>
-                            <a href="pailot4.jpg" data-ngid="32" data-ngalbumid="3" data-ngthumb="pailot4.png"    >Pailot</a>
-                            <a href="pailot5.jpg" data-ngid="33" data-ngalbumid="3" data-ngthumb="pailot5.jpg"    >Pailot</a>
-                        
+                
+                <div class="portfolio portfolio-first" id="pailot-link">
+                    <h2>Pailot</h2>
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-image">
+                            <img src="img/pailot.jpg" alt="Pailot">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/pailot2.jpg" alt="Pailot">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/pailot4.png" alt="Pailot">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/pailot5.jpg" alt="Pailot">
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h2>Pailot</h2>
-                        <p>Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México</p>
-                        <div class="button"><a href="https://transportamex.com/" target="_blank"><button><span class="index"> Ver página<i class="gg-arrow-right"></i></span></button></a></div>
+                        <p>{{ $t('pailot.description') }}</p>
                     </div>
                 </div>
+                
+                <div class="portfolio portfolio-first" id="busolinea-link">
+                    <h2>Busolinea</h2>
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-image">
+                            <img src="img/buso.png" alt="Busolinea">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/buso.png" alt="Busolinea">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/buso2.png" alt="Busolinea">
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="img/buso1.png" alt="Busolinea">
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <p>{{ $t('busolinea.description') }}</p>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!--portfolio end-->
@@ -500,6 +483,111 @@
             </div>
         </div>
         <!--contact end-->
+
+        <!--transportamex-->
+        <div id="transportamex">
+            <div class="blog-header">
+                Transportamex
+                <!-- <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span> -->
+            </div>
+
+            
+            <div class="blog-content">
+                <div class="blogs">
+                    <div class="img">
+                        <img src="img/transportamex.png" alt="transportamex">
+                        <img src="img/transportamex2.png" alt="transportamex">
+                        <img src="img/transportamex3.png" alt="transportamex">
+                        <img src="img/transportamex5.png" alt="transportamex">
+                        <div class="blog-date">{{ $t('transportamex.date') }}</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>{{ $t('transportamex.title') }}</h3>
+                        <p>{{ $t('transportamex.description') }}</p>
+                    
+                        <div class="button">
+                            <a href="https://transportamex.com/" target="_blank">
+                                <button>
+                                    <span class="index"> Ver<i class="gg-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <!--transportamex end-->
+
+        <!--pailot-->
+        <div id="pailot">
+            <div class="blog-header">
+                pailot
+                <!-- <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span> -->
+            </div>
+
+            
+            <div class="blog-content">
+                <div class="blogs">
+                    <div class="img">
+                        <img src="img/pailot.jpg" alt="pailot">
+                        <img src="img/pailot2.jpg" alt="pailot">
+                        <img src="img/pailot4.jpg" alt="pailot">
+                        <img src="img/pailot5.jpg" alt="pailot">
+                        <div class="blog-date">{{ $t('pailot.date') }}</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>{{ $t('pailot.title') }}</h3>
+                        <p>{{ $t('pailot.description') }}</p>
+                    
+                        <div class="button">
+                            <a href="https://pailot.com/" target="_blank">
+                                <button>
+                                    <span class="index"> Ver<i class="gg-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <!--pailot end-->
+
+        <!--busolinea-->
+        <div id="busolinea">
+            <div class="blog-header">
+                busolinea
+                <!-- <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span> -->
+            </div>
+
+            
+            <div class="blog-content">
+                <div class="blogs">
+                    <div class="img">
+                        <img src="img/buso.png" alt="busolinea">
+                        <img src="img/buso1.png" alt="busolinea">
+                        <img src="img/buso2.png" alt="busolinea">
+                        <img src="img/buso0.png" alt="busolinea">
+                        <div class="blog-date">{{ $t('busolinea.date') }}</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>{{ $t('busolinea.title') }}</h3>
+                        <p>{{ $t('busolinea.description') }}</p>
+                    
+                        <div class="button">
+                            <a href="https://busolinea.com/" target="_blank">
+                                <button>
+                                    <span class="index"> Ver<i class="gg-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <!--busolinea end-->
         
         <!--copyright-section You Can Remove After Downloading-->
         <div class="footer">
