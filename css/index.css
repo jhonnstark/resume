@@ -1039,7 +1039,7 @@ body{
     justify-content: center;
 }
 .blogs{
-    height: 420px;
+    /* height: 420px; */
     width: 40%;
     margin: 20px;
     border-radius: 8px;
@@ -1098,12 +1098,12 @@ body{
     padding: 30px;
     letter-spacing: 1px;
   }
-.blogs:hover .img{
+/* .blogs:hover .img{
       transform: translateY(-70%);
   }
 .blogs:hover .blog-text{
     transform: translateY(-70%);
-}
+} */
 .blogs a{
     text-decoration: none;
     color: whitesmoke;
