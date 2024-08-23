@@ -90,145 +90,169 @@ function rotateText(){
   }
 }
 $(function(){
-
-    $('#about-link').on('click',function(){
-      gsap.to('#navigation-content',0,{display:"none",delay:.7});
-      gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-  gsap.to('#header',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-   gsap.to('#breaker',0,{display:"block"});
-   gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#contact',0,{display:"none"});
-gsap.to('#busolinea',0,{display:"none"});
-gsap.to('#pailot',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-   gsap.to('#breaker',0,{display:"none",delay:2});
-   gsap.to('#breaker-two',0,{display:"none",delay:2});
-   gsap.to('#about',0,{display:"block",delay:.7});
-   gsap.to('#navigation-content',0,{display:'flex',delay:2});
- })
+  $('#about-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#about',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
  $('#contact-link').on('click',function(){
-   gsap.to('#navigation-content',0,{display:"none",delay:.7});
-   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#busolinea',0,{display:"none"});
-gsap.to('#pailot',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#contact',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-$('#portfolio-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#contact',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#busolinea',0,{display:"none"});
-gsap.to('#pailot',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-$('#transportamex-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-gsap.to('#contact',0,{display:"none"});c
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#transportamex',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-$('#busolinea-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-gsap.to('#contact',0,{display:"none"});
-gsap.to('#pailot',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#busolinea',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-$('#pailot-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-gsap.to('#contact',0,{display:"none"});
-gsap.to('#busolinea',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#pailot',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-$('#home-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-gsap.to('#about',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-gsap.to('#contact',0,{display:"none"});
-gsap.to('#transportamex',0,{display:"none"});
-gsap.to('#busolinea',0,{display:"none"});
-gsap.to('#pailot',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#header',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#contact',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#portfolio-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#portfolio',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#transportamex-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#transportamex',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#busolinea-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#busolinea',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#pailot-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#pailot',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#salud-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#salud',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#home-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#header',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
 })
 
-})
 $(function(){
- var body =  document.querySelector('body');
- var $cursor = $('.cursor')
-   function cursormover(e){
-    
+  var body =  document.querySelector('body');
+  var $cursor = $('.cursor')
+  function cursormover(e) {
     gsap.to( $cursor, {
       x : e.clientX ,
       y : e.clientY,
       stagger:.002
-     })
-   }
-   function cursorhover(e){
-    gsap.to( $cursor,{
-     scale:1.4,
-     opacity:1
     })
-    
+  }
+  function cursorhover(e){
+    gsap.to( $cursor,{
+      scale:1.4,
+      opacity:1
+    })
   }
   function cursor(e){
     gsap.to( $cursor, {
-     scale:1,
-     opacity:.6
+      scale:1,
+      opacity:.6
     }) 
   }
+  
   $(window).on('mousemove',cursormover);
   $('.menubar').hover(cursorhover,cursor);
   $('a').hover(cursorhover,cursor);
@@ -310,6 +334,16 @@ const messages = {
       date: 'july, 2019',
       description: 'Busolinea allows you to buy bus tickets and know the routes, schedules, prices, promotions and lines of Grupo Estrella Blanca that travel the country.'
     },
+    salud: {
+      title: 'App',
+      date: 'july, 2024',
+      description: 'A product to face every dental challenge together.'
+    },
+    cimaco: {
+      title: 'CRM',
+      date: 'August, 2024',
+      description: 'CRM for product management is a comprehensive solution designed to optimize inventory management and product tracking.'
+    },
     footer: {
       select: 'Select a language: ',
     }
@@ -387,6 +421,16 @@ const messages = {
       title: 'Pagina web',
       date: 'julio, 2019',
       description: 'Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.'
+    },
+    salud: {
+      title: 'Pagina web',
+      date: 'julio, 2024',
+      description: 'Un producto para engrentar cada reto odontologico juntos.'
+    },
+    cimaco: {
+      title: 'CRM',
+      date: 'Agosto, 2024',
+      description: 'CRM para la administración de productos es una solución integral diseñada para optimizar la gestión de inventarios y el seguimiento de productos.'
     },
     footer: {
       select: 'Cambia el idioma',

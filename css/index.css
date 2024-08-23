@@ -1022,7 +1022,8 @@ body{
 
 #transportamex,
 #pailot,
-#busolinea {
+#busolinea,
+#salud {
     background: #101010;
     display: none;
     color:whitesmoke;
@@ -1667,7 +1668,8 @@ For devices with smaller width like mobile phone
     display: flex;
     height: auto;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
+    align-items: stretch;
     overflow: hidden;
 }
 
@@ -1677,10 +1679,10 @@ For devices with smaller width like mobile phone
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         padding: 10px;
-        margin: 0 0 20px;
+        margin: 0 0 20px 3.3%;
     }
     
 .portfolio-wrap {
@@ -1811,7 +1813,7 @@ For devices with smaller width like mobile phone
             }
             .contact-info{
                 width: 90%;
-                height: 500px;
+                height: 590px;
                 background-position: center;
                 background-size: cover;
                 border-radius: 16px;
