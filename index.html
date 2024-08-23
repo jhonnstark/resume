@@ -37,7 +37,9 @@
         <div id="breaker-two">
         </div>
         <!--link-screen-->
+
         <!--Main-Section-->
+
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
             <div class="navigation-close">
@@ -53,6 +55,9 @@
                 </a>
                 <a href="#" :data-text="$t('menu.portfolio')" id="portfolio-link" >
                     {{ $t('menu.portfolio') }}
+                </a>
+                <a href="#" :data-text="$t('menu.caridad')" id="caridad-link" >
+                    {{ $t('menu.caridad') }}
                 </a>
                 <a href="#" :data-text="$t('menu.contact')" id="contact-link" >
                     {{ $t('menu.contact') }}
@@ -687,6 +692,61 @@
             </div>  
         </div>
         <!--busolinea end-->
+
+        <!--cimaco-->
+        <div id="cimaco">
+            <div class="blog-header">
+                Cimaco
+                <!-- <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span> -->
+            </div>
+
+            
+            <div class="blog-content">
+                <div class="blogs">
+                    <div class="img">
+                        <img
+                            src="img/cimaco.png"
+                            data-ngsrc="img/cimaco.png"
+                            data-nanogallery2-lightbox
+                            alt="cimaco"
+                            >
+                        <img
+                            src="img/cimaco3.png"
+                            data-ngsrc="img/cimaco3.png"
+                            data-nanogallery2-lightbox
+                            alt="cimaco"
+                            >
+                        <img
+                            src="img/cimaco2.png"
+                            data-ngsrc="img/cimaco2.png"
+                            data-nanogallery2-lightbox
+                            alt="cimaco"
+                            >
+                        <img
+                            src="img/cimaco4.png"
+                            data-ngsrc="img/cimaco4.png"
+                            data-nanogallery2-lightbox
+                            alt="cimaco"
+                            >
+                        <div class="blog-date">{{ $t('cimaco.date') }}</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>{{ $t('cimaco.title') }}</h3>
+                        <p>{{ $t('cimaco.description') }}</p>
+                    
+                        <div class="button">
+                            <a href="https://cimaco.com/" target="_blank">
+                                <button>
+                                    <span class="index"> Ver<i class="gg-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <!--cimaco end-->
         
         <!--salud-->
         <div id="salud">
@@ -751,6 +811,7 @@
             </div>
         </div>
         <!--copyright-section-->
+
     </div>
     <!--all the divisions-->
 
@@ -764,7 +825,7 @@
         const { createI18n, useI18 } = VueI18n
 
         const i18n = createI18n({
-            locale: 'en',
+            locale: 'es',
             fallbackLocale: 'en',
             messages
         })

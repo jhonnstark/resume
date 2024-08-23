@@ -1023,12 +1023,14 @@ body{
 #transportamex,
 #pailot,
 #busolinea,
+#cimaco,
 #salud {
     background: #101010;
     display: none;
     color:whitesmoke;
     width: 100%;
     height: auto;
+    min-height: 100vh;
 }
 .blog-content{
     display: flex;

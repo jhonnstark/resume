@@ -103,6 +103,7 @@ $(function(){
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"none",delay:2});
     gsap.to('#breaker-two',0,{display:"none",delay:2});
     gsap.to('#about',0,{display:"block",delay:.7});
@@ -118,6 +119,7 @@ $(function(){
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -135,6 +137,7 @@ $(function(){
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -151,6 +154,7 @@ $(function(){
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -169,6 +173,7 @@ $(function(){
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -186,6 +191,7 @@ $(function(){
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -203,11 +209,30 @@ $(function(){
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
     gsap.to('#breaker-two',0,{display:"none",delay:2});
     gsap.to('#salud',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#cimaco-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#cimaco',0,{display:"block",delay:.7});
     gsap.to('#navigation-content',0,{display:'flex',delay:2});
   })
   $('#home-link').on('click',function(){
@@ -220,6 +245,7 @@ $(function(){
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -269,6 +295,7 @@ const messages = {
       about: 'ABOUT',
       aboutMenu: 'ABOUT',
       portfolio: 'PORTFOLIO',
+      caridad: 'CHARITY',
       contact: 'CONTACT',
     },
     header: {
@@ -357,6 +384,7 @@ const messages = {
       about: 'CARRERA Y CV',
       aboutMenu: 'CARRERA',
       portfolio: 'PORTAFOLIO',
+      caridad: 'CARIDAD',
       contact: 'CONTACTO',
     },
     header: {
