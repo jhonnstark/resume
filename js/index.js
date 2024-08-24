@@ -305,7 +305,7 @@ const messages = {
     about: {
       career: 'Professional',
       professional: 'career',
-      download: 'Download ',
+      download: 'Download my ',
       resume: 'resume.',
       description: 'With more than 10 years of professional experience, responsible and used to work on projects to be delivered on time and under pressure, I have the knowledge to complete your project. I like new challenges and enjoy every new project.',
       iam: 'I am a',
@@ -394,7 +394,7 @@ const messages = {
     about: {
       career: 'Carrera',
       professional: 'profesional',
-      download: 'Descarga mi CV',
+      download: 'Descarga mi ',
       resume: 'CV.',
       description: 'Con más de 10 años de experiencia profesional, responsable y acostumbrado a trabajar en proyectos a entregar en tiempo y bajo presión, tengo los conocimientos para llevar a término tu proyecto. Me gustan los nuevos retos y disfruto cada proyecto nuevo.',
       iam: 'Soy un',
