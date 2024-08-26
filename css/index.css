@@ -1024,6 +1024,7 @@ body{
 #pailot,
 #busolinea,
 #cimaco,
+#caridad,
 #salud {
     background: #101010;
     display: none;
@@ -2443,7 +2444,7 @@ for tabs and large phones
     }
     .about-img {
         width: 40%;
-        height:450px;
+        height: auto;
         padding: 30px;
         border-radius: 40px;
     }

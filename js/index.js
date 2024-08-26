@@ -104,6 +104,7 @@ $(function(){
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"none",delay:2});
     gsap.to('#breaker-two',0,{display:"none",delay:2});
     gsap.to('#about',0,{display:"block",delay:.7});
@@ -120,6 +121,7 @@ $(function(){
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -138,6 +140,7 @@ $(function(){
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -156,6 +159,7 @@ $(function(){
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -174,6 +178,7 @@ $(function(){
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -192,6 +197,7 @@ $(function(){
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -210,6 +216,7 @@ $(function(){
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
@@ -228,11 +235,32 @@ $(function(){
     gsap.to('#transportamex',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
     gsap.to('#breaker',0,{display:"none",delay:2});
     gsap.to('#breaker-two',0,{display:"none",delay:2});
     gsap.to('#cimaco',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#caridad-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#busolinea',0,{display:"none"});
+    gsap.to('#transportamex',0,{display:"none"});
+    gsap.to('#pailot',0,{display:"none"});
+    gsap.to('#salud',0,{display:"none"});
+    gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    gsap.to('#caridad',0,{display:"block",delay:.7});
     gsap.to('#navigation-content',0,{display:'flex',delay:2});
   })
   $('#home-link').on('click',function(){
@@ -246,6 +274,7 @@ $(function(){
     gsap.to('#busolinea',0,{display:"none"});
     gsap.to('#pailot',0,{display:"none"});
     gsap.to('#cimaco',0,{display:"none"});
+    gsap.to('#caridad',0,{display:"none"});
     gsap.to('#salud',0,{display:"none"});
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -371,6 +400,12 @@ const messages = {
       date: 'August, 2024',
       description: 'CRM for product management is a comprehensive solution designed to optimize inventory management and product tracking.'
     },
+    caridad: {
+      title: 'Charity',
+      refugio: 'Kitten',
+      gatitos: 'shelter',
+      description: 'Today I had the pleasure of donating two bags of cat food to the local shelter, a small action that fills me with satisfaction knowing that it will help improve the lives of these wonderful felines. This gesture is just the beginning, and I am committed to continuing to support the shelter on a regular basis to ensure that each cat receives the care it deserves. I encourage everyone to join this cause, whether by adopting a kitten or making a donation; every little bit helps and can make a big difference in the lives of these special beings. Together we can give them a future full of love and care!'
+    },
     footer: {
       select: 'Select a language: ',
     }
@@ -459,6 +494,12 @@ const messages = {
       title: 'CRM',
       date: 'Agosto, 2024',
       description: 'CRM para la administración de productos es una solución integral diseñada para optimizar la gestión de inventarios y el seguimiento de productos.'
+    },
+    caridad: {
+      title: 'Caridad',
+      refugio: 'Refugio de',
+      gatitos: 'gatitos',
+      description: 'Hoy tuve el gusto de donar dos costales de comida para gatos al refugio local, una pequeña acción que me llena de satisfacción al saber que contribuirá a mejorar la vida de estos maravillosos felinos. Este gesto es solo el comienzo, y me comprometo a seguir apoyando al refugio de manera regular para asegurarme de que cada gato reciba el cuidado que merece. Animo a todos a unirse a esta causa, ya sea adoptando un gatito o haciendo una donación; cada pequeño aporte cuenta y puede hacer una gran diferencia en la vida de estos seres tan especiales. ¡Juntos podemos brindarles un futuro lleno de amor y cuidado!'
     },
     footer: {
       select: 'Cambia el idioma',
